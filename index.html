@@ -34,12 +34,22 @@
     ul.colors{
 	display:inline-block;
 	margin-left:5%;
-}
+    }
+
+    div#myDiv p{
+        /*background-color: yellow*/
+    }
+
+    div#yetAnotherDiv li:nth-child(even){
+        background-color: yellow;
+    }
+
+
   </style>
  </head>
  <body>
 	<header role="banner">
-	    <img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
+	    <img src="images/logo.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
 		<h1 class="masthead">Eddie Browser</h1>
 		<nav>
 			<ul>
@@ -48,21 +58,22 @@
 				<li class="seasons"><a href="Summer">Summer</a></li>
 				<li class="seasons"><a href="Fall">Fall</a></li>
 				<li class="seasons"><a href="Winter">Winter</a></li>
+                <li class="seasons"><a href="extra-credit.html">Extra-credit</a></li>
 			</ul>
 		</nav>
 	</header>
      
    <main class="wrapper">
-    <header><h3>Outfitter for All Seasons!</h3></header>
+    <header><h3 class = "slogan">Outfitter for All Seasons!</h3></header>
     <p>
-    The colors of the seasonal images are as follows:
-        <ul class="colors">
-            <li>Spring: <b>#2B7129</b></li>
-            <li>Summer: <b>#EBA52B</b></li>
-            <li>Fall: <b>#A81124</b></li>
-            <li>Winter: <b>#005393</b></li>
-        </ul>
-    </p>
+        <form id="dateForm">
+        <label for="dateField">
+            Input Date:<input type="text" name="dateField" id="dateField" />
+        </label>
+            <input type="submit" value="submit" />
+        </form>
+     </p>
+
     <p>
     Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
     <img src="images/300x400.png" alt="Season Wear Goes Here" id="wear" />
@@ -78,12 +89,13 @@
     </p>
     <footer>
     <p><small>&copy; 2021 by 
-        YOUR NAME HERE, All Rights Reserved ~ 
+        Brandt M., All Rights Reserved ~ 
         <a id="html-checker" href="#">Check HTML</a> ~ 
         <a id="css-checker" href="#">Check CSS</a></small>
     </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/seasonal-styles.js"></script>
   </body>
 </html>
