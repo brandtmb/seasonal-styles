@@ -26,14 +26,14 @@
                     $("#logo").attr("src","images/fall.gif");
                     $("#wear").attr("src","images/fall-wear.jpg");
                     $("html").css("background-color","beige");
-                    $(".slogan").text("Spring is the new spring");
+                    $(".slogan").text("Fall, where'd the sun go?!");
                 break;
 
                 case "winter":
                     $("#logo").attr("src","images/winter.gif");
                     $("#wear").attr("src","images/winter-wear.jpg");
                     $("html").css("background-color","aliceblue");
-                    $(".slogan").text("Spring is the new spring");
+                    $(".slogan").text("Winter is too cold for me!");
                 break;
 
                 default:
